@@ -1,4 +1,4 @@
-package com.creseliana.mazes.mazes;
+package com.creseliana.mazes;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;

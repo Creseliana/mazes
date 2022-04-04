@@ -1,4 +1,4 @@
-module com.creseliana.mazes.mazes {
+module com.creseliana.mazes {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.web;
@@ -9,7 +9,8 @@ module com.creseliana.mazes.mazes {
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
+//    requires lombok;
 
-    opens com.creseliana.mazes.mazes to javafx.fxml;
-    exports com.creseliana.mazes.mazes;
+    opens com.creseliana.mazes to javafx.fxml;
+    exports com.creseliana.mazes;
 }

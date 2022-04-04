@@ -24,8 +24,8 @@ tasks.withType(JavaCompile) {
 }
 
 application {
-    mainModule = 'com.creseliana.mazes.mazes'
-    mainClass = 'com.creseliana.mazes.mazes.HelloApplication'
+    mainModule = 'com.creseliana.mazes'
+    mainClass = 'com.creseliana.mazes.HelloApplication'
 }
 
 javafx {
@@ -46,6 +46,8 @@ dependencies {
     implementation('eu.hansolo:tilesfx:11.48') {
         exclude(group: 'org.openjfx')
     }
+    implementation 'org.projectlombok:lombok:1.18.22'
+    implementation 'org.projectlombok:lombok:1.18.22'
 
     testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
