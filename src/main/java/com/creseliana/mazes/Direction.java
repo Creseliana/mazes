@@ -1,9 +1,11 @@
 package com.creseliana.mazes;
 
+import lombok.Getter;
+
 /**
  * @author Valeria Sterzhanova
  */
-//@Getter
+@Getter
 public enum Direction {
     LEFT(0, -1),
     RIGHT(0, 1),
@@ -19,11 +21,11 @@ public enum Direction {
         this.column = column;
     }
 
-    public int getRow() {
-        return row;
-    }
-
-    public int getColumn() {
-        return column;
-    }
+//    public int getRow() {
+//        return row;
+//    }
+//
+//    public int getColumn() {
+//        return column;
+//    }
 }

@@ -15,7 +15,7 @@ public class HelloApplication extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        MazeGenerator mazeGenerator = new MazeGeneratorImpl();
+        MazeGenerator mazeGenerator = new MazeGeneratorImpl(new PathCreatorImpl());
 
         int[][] maze = mazeGenerator.generate(5);
 

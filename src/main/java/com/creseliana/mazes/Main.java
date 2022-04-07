@@ -12,9 +12,9 @@ public class Main {
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<>();
 
-        MazeGenerator mazeGenerator = new MazeGeneratorImpl();
+        MazeGenerator mazeGenerator = new MazeGeneratorImpl(new PathCreatorImpl());
 
-        int[][] maze = mazeGenerator.generate(5);
+        int[][] maze = mazeGenerator.generate(10);
 
         for (int[] row : maze) {
             System.out.println(Arrays.toString(row));

@@ -3,6 +3,7 @@ plugins {
     id 'application'
     id 'org.openjfx.javafxplugin' version '0.0.10'
     id 'org.beryx.jlink' version '2.24.1'
+    id 'org.javamodularity.moduleplugin' version '1.8.10'
 }
 
 group 'com.creseliana.mazes'
@@ -46,8 +47,8 @@ dependencies {
     implementation('eu.hansolo:tilesfx:11.48') {
         exclude(group: 'org.openjfx')
     }
-    implementation 'org.projectlombok:lombok:1.18.22'
-    implementation 'org.projectlombok:lombok:1.18.22'
+    implementation  'org.projectlombok:lombok:1.18.22'
+    annotationProcessor  'org.projectlombok:lombok:1.18.22'
 
     testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")

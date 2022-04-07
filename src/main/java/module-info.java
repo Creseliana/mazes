@@ -9,7 +9,7 @@ module com.creseliana.mazes {
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
-//    requires lombok;
+    requires lombok;
 
     opens com.creseliana.mazes to javafx.fxml;
     exports com.creseliana.mazes;
